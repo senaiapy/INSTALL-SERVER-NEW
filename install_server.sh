@@ -118,6 +118,10 @@ sudo ufw allow 21465/tcp &&
 sudo ufw reload  &&
 sudo ufw enable 
 
+############# node
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 ############# CADDY
 #if ! [ -x "$(command -v caddy)" ]; then
     echo "${Green}Install Caddy.${Reset}" &&
